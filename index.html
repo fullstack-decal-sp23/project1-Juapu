@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css" />
+    <title></title>
+  </head>
+  <body>
+    <div class = "header">
+      <img src="blue-drip.jpeg" alt="drip" class = "top">
+    </div>
+    <div class= "body">
+        <h1 class = "blue">Hello. I'm Justin Pau, a software engineer.</h1>
+        <p class = "blue" id = "who-am-i">I picked up programming when I came to college at UC Berkeley and absolutely loved it. I did not know anything about computers in high school and when I was learning how to program, I was worried my laptop might explode. But gradually, things started making sense and my programs would work. It was the best feeling in the world!</p>
+      <div class = "purple">
+        <h2>Work Experience</h2>
+        <h3>SWE Intern @ Calabrio</h3>
+        <ul>
+          <li>Worked on a job flow management platform</li>
+          <li>Built and automated CI/CD pipelines to deploy code to ECS containers, create entries in DynamoDB, and Lambdas</li>
+          <li>Implemented a lambda function to test that data was getting from a queue in SQS to a worker in an ECS container</li>
+          <li>Worked extensively with AWS tools, azure DevOps, pipelines, and Datadog</li>
+          <li>Participated in the agile process which included daily stand ups, refinements, retrospectives at the end of sprints</li>
+        </ul>
+        <h4>CS61A Lab Assistant</h4>
+        <ul>
+          <li>Assisted in a lab section teaching students fundamental concepts in computer science</li>
+          <li>Used Python and Scheme to teach iteration, recursion, data abstraction, object-oriented programming to about 30 students</li>
+        </ul>
+        <h5>Data8 Lab Assistant</h5>
+        <ul>
+          <li>Assisted in a lab section teaching students how to to analyze data using computer programming and statistical inference</li>
+          <li>This course was taught in Python and provided students with tools including Hypothesis testing, A/B testing, linear regression, and bootstrapping</li>
+        </ul>
+        <h6 class = "purple">Contact:</h6>
+        <div class="purple contact">
+          <div>
+            <a target = "_blank" href="https://www.linkedin.com/in/justin-pau-b62851199/"><img src="linkedin.png" class = "pic"></a>
+          </div>
+          <div>
+            <a target = "_blank" href="https://www.instagram.com/just1n_pau/"><img src="instagram.png" class = "pic"></a>
+          </div>
+        </div>
+
+        <form class = "my-form">
+          <label class = "label">Color:</label>
+          <input type="text" class = "color-input" placeholder="Type a color here!">
+          <button type="button" class="button">Change</button>
+          <input type="submit" value = "reload the page">
+
+          <script>
+            var color = document.querySelector('.color-input');
+            const button = document.querySelector('.button');
+            var blues = document.querySelectorAll('.blue');
+            var purples = document.querySelectorAll('.purple');
+            button.addEventListener('click', function () {
+              blues.forEach(elem => {
+                elem.style.color = color.value;
+              });
+              purples.forEach(elem => {
+                elem.style.color = color.value;
+              });
+
+            });
+          </script>
+        </form>
+      </div>
+    </div>
+
+
+
+    <div class= "footer">
+      <img src="pink-drip.jpeg" alt="splash" class = "bot">
+    </div>
+  </body>
+</html>
